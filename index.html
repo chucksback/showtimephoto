@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home &sdot; Showtime Photography</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- External Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <script defer src="/static/user-sites/site.js"></script>
+    <script defer src="/static/user-sites/demosite.js"></script>
+    <link href="/static/user-sites/site.css" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/2b2753719c.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <link href="/static/tailwind-cmp.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Content -->
+    <div id="main-content-div">
+        <div class="main-container p-8 md:p-24">
+            <div class="max-w-screen-xl mx-auto">
+                <div class="w-full grid gap-16 items-center grid-cols-1 md:grid-cols-2 items-center">
+                    <div class="md:text-2xl text-xl p-8">
+                        <h1 class="lg:text-6xl text-4xl headline"><strong>School Photography Services</strong> for You</h1>
+                        <div class="mt-1 text-description">Capture memories with our professional photography services.</div>
+                        <div class="flex justify-start gap-x-4 mt-2">
+                            <a href="/" target="_blank" class="w-fit">
+                                <button class="book-now-button">Book now!</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative w-full" data-carousel="slide">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w1NDkyMjl8MHwxfHNlYXJjaHwxfHxQaG90b2dyYXBoeSUyMFNlcnZpY2VzJTIwUGFnZXxlbnwwfDB8fHwxNzMxMjEzNzA0fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" class="absolute block rounded w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                            </div>
+                            <!-- Additional carousel items -->
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-carousel-slide-to="0"></button>
+                            <button type="button" data-carousel-slide-to="1"></button>
+                            <button type="button" data-carousel-slide-to="2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Signup Section -->
+    <div class="main-container p-8 md:p-24">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="md:w-2/3 w-full mx-auto grid gap-16 items-center grid-cols-1 md:grid-cols-1 items-center">
+                <div>
+                    <h3 class="text-3xl md:text-4xl mb-4">Subscribe to our Newsletter!</h3>
+                    <form class="flex w-[90%] text-lg newsletter-signup-form">
+                        <input type="text" name="email" placeholder="Enter your email here" class="w-2/3 px-4 py-2 rounded-l-md border">
+                        <button class="px-4 py-2 rounded-r-md subscribe-button" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="main-container p-8 md:p-24 gallery-section">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="w-full grid gap-16 items-center grid-cols-1 md:grid-cols-2 items-center">
+                <div class="w-full">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w1NDkyMjl8MHwxfHNlYXJjaHwxfHxDbGFzc3Jvb218ZW58MHwwfHx8MTczMTIxMzcwNnww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" class="w-full rounded">
+                </div>
+                <div class="p-8 text-lg">
+                    <h1 class="text-3xl md:text-5xl">Gallery</h1>
+                    <p class="gallery-description">Explore our stunning collection of photographs captured by our talented photographers. Contact us today to schedule a session and bring your vision to life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="main-container p-8 md:p-24 pricing-section">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="w-full grid gap-16 items-center grid-cols-1 md:grid-cols-2 items-center">
+                <div class="w-full">
+                    <img src="https://images.unsplash.com/photo-1564100842-06f5dcd6f8c8?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w1NDkyMjl8MHwxfHNlYXJjaHw3fHxQaG90b2dyYXBoeSUyMFByaWNpbmclMjBQYWdlfGVufDB8MHx8fDE3MzEyMTM3MDh8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" class="w-full rounded">
+                </div>
+                <div class="p-8 text-lg">
+                    <h1 class="text-3xl md:text-5xl">Pricing</h1>
+                    <p>Our pricing menu offers transparent and competitive rates for our professional photography services. Contact us today to discuss your specific needs and receive a personalized quote for your project.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Support Section -->
+    <div class="main-container p-8 md:p-24 support-section">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="w-full grid gap-16 items-center grid-cols-1 md:grid-cols-2 items-center">
+                <div class="p-8 text-lg">
+                    <h1 class="text-3xl md:text-5xl">Customer Support</h1>
+                    <p>We provide a comprehensive FAQ section to address common queries and ensure a seamless contact process for all your photography needs.</p>
+                </div>
+                <div class="w-full">
+                    <img src="https://images.unsplash.com/photo-1632215861513-130b66fe97f4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w1NDkyMjl8MHwxfHNlYXJjaHw0fHxDbGFzc3Jvb218ZW58MHwwfHx8MTczMTIxMzcwNnww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" class="w-full rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-container body-font w-full footer-section">
+        <div class="p-8 flex items-center justify-between max-w-screen-xl mx-auto">
+            <div>
+                <span class="title-font font-medium"><p>&copy; Showtime Photography, 2024</p></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
